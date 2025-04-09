@@ -1,0 +1,24 @@
+a=input("enter first number:")
+
+b=input("enter second number:")
+
+if a<b:
+   
+    sum=a+b
+   
+    print("sum of two numbers:",sum)
+
+else:
+
+    sub=a-b
+
+    print("diffrence of two numbers:",sub)
+
+Output:-
+
+enter first number:5  
+
+enter second number:9
+
+sum of two numbers: 59
+

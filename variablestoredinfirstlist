@@ -1,0 +1,21 @@
+a=10
+
+b=5.3
+
+c='python'
+
+d=5+5j
+
+e=True
+
+ls=[a,b,c,d,e]
+
+print(ls)
+
+print(type(ls))
+
+
+Output:-
+[10, 5.3, 'python', (5+5j), True]
+
+<class 'list'>

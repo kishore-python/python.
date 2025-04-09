@@ -1,0 +1,18 @@
+l=['python','is','very','difficult','programming','language']
+
+print(type(l))
+
+print(l)
+s="".join(l)
+
+print(s)
+
+Output:-
+
+<class 'list'>
+
+['python', 'is', 'very', 'difficult', 'programming', 'language']
+
+pythonisverydifficultprogramminglanguage
+
+=== Code Execution Successful ===
