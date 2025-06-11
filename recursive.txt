@@ -1,0 +1,95 @@
+
+def fibonacci(Number):
+    if(Number == 0):
+        return 0
+    elif Number == 1:
+        return 1
+    else:
+        return fibonacci(Number-2)+fibonacci(Number-1)
+Number = int(input("please Enter the Fibonacci number range ="))
+sum = 0
+for Num in range(Number):
+    print(fibonacci(Num),end='')
+    sum = sum + fibonacci(Num)
+    print("\n The sum of Fibonacci series Numbers=%d"%sum)
+
+Output:-
+
+please Enter the Fibonacci number range =8
+0
+ The sum of Fibonacci series Numbers=0
+1
+ The sum of Fibonacci series Numbers=1
+1
+ The sum of Fibonacci series Numbers=2
+2
+ The sum of Fibonacci series Numbers=4
+3
+ The sum of Fibonacci series Numbers=7
+5
+ The sum of Fibonacci series Numbers=12
+8
+ The sum of Fibonacci series Numbers=20
+13
+ The sum of Fibonacci series Numbers=33
+--------------------------------------------------
+def factorial(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+n = int(input("Enter any number:"))
+print("Factorial value of",n,"is:",factorial(n))
+
+Output:-
+
+Enter any number:5
+Factorial value of 5 is: 120
+---------------------------------------------------------
+def pal(s):
+    s = s.lower()
+    if len(s)<=1:
+        return True
+    elif s[0] != s[-1]:
+        return False
+    else:
+        return pal(s[1:-1])
+myinput = input("Enter a string:")
+if pal(myinput):
+    print(f"{myinput}'is a palindrone")
+else:
+    print(f"{myinput}'is not a palindrone")
+
+Output:-
+
+Enter a string:sis
+sis'is a palindrome
+-------------------------------------------------------
+def gcd(a,b):
+    if b == 0:
+        return a
+    else:
+        return gcd(b,a%b)
+x = input("Enter the first integer:")
+y = input("Enter the second integer:")
+if x.isdigit() and y.isdigit():
+    a = int(x)
+    b = int(y)
+    result = gcd(a,b)
+    print(f"The gcd of{a} and {b} is:",result)
+else:
+    print("please enter valid integers")
+
+Output:-
+
+Enter the first integer:78
+Enter the second integer:90
+The gcd of78 and 90 is: 6
+----------------------------------------------
+
+
+
+
+

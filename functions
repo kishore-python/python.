@@ -1,0 +1,182 @@
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+num1 = int(input("Enter the first number:"))
+num2 = int(input("Enter the second number:"))
+result = gcd(num1,num2)
+print("The Gcd of",num1,"and",num2,"is",result)
+
+Output:-
+Enter the first number:18
+
+Enter the second number:36
+
+The Gcd of 18 and 36 is 18
+
+
+---------------------------------------------------------------------------
+def check_even_odd(number):
+ 
+   if number % 2 == 0:
+   
+     return "even"
+  
+  else:
+  
+      return "odd"
+
+num = int(input("Enter a number:"))
+
+result = check_even_odd(num)
+
+print("The number is ",result)
+
+Output:-
+Enter a number:14
+
+The number is  even
+
+-----------------------------------------------------------------------------
+def factorial(n):
+ 
+   if n == 0:
+return 1
+ 
+   else:
+      
+  return n*factorial(n-1)
+
+for i in range(1,11):
+  
+ result = factorial(i)
+   
+ print("Factorial of",i,"is",result)
+
+
+Output:-
+Factorial of 1 is 1
+
+Factorial of 2 is 2
+
+Factorial of 3 is 6
+
+Factorial of 4 is 24
+
+Factorial of 5 is 120
+
+Factorial of 6 is 720
+
+Factorial of 7 is 5040
+
+Factorial of 8 is 40320
+
+Factorial of 9 is 362880
+
+Factorial of 10 is 3628800A
+
+
+-------------------------------------------------------------
+def factorial(n):
+  
+  if n == 0:
+    
+    return 1
+  
+  else:
+ 
+       return n*factorial(n-1)
+
+num= int(input("Enter a number:"))
+
+result = factorial(num)
+
+print("The factorial of",num,"is",result)
+
+Output:-
+Enter a number:5
+
+The factorial of 5 is 120
+
+
+--------------------------------------------------------------
+
+def calculate_sum(numbers):
+  
+  total = 0
+  
+  for num in numbers:
+    
+    total += num
+   
+ return total
+
+list = []
+
+n = int(input("Enter the number of elements in the list:"))
+
+for i in range(n):
+ 
+  num = eval(input("Enter element{}:".format(i+1)))
+ 
+   list.append(num)
+
+result = calculate_sum(list) 
+
+print("The sum of the list is",result)
+
+Output:-
+Enter the number of elements in the list:3
+
+Enter element1:12
+
+Enter element2:13
+
+Enter element3:14
+
+The sum of the list is 39
+
+
+------------------------------------------------------------------------------------
+def add(x,y):
+ 
+   return x+y
+
+def subtract(x,y):
+   
+ return x-y
+
+def multiply(x,y):
+  
+  return x*y
+
+def divide(x,y):
+   
+ return x/y
+
+num1 = float(input("Enter the first number:"))
+
+num2 = float(input("Enter the second number:"))
+
+print("Addition:",add(num1,num2))
+
+print("subtraction:",subtract(num1,num2))
+
+print("multiplication:",multiply(num1,num2))
+
+print("Division:",divide(num1,num2))
+
+Output:-
+Enter the first number:12
+Enter the second number:14
+
+Addition: 26.0
+
+subtraction: -2.0
+
+multiplication: 168.0
+
+Division: 0.8571428571428571
+
+
+

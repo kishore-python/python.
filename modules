@@ -1,0 +1,78 @@
+
+import random
+random_number = random.randint(1,10)
+print("Random Number:",random_number)
+
+Output:-
+
+Random Number: 6
+---------------------------------------------
+import datetime
+current_datetime = datetime.datetime.now()
+print("Current Date and Time:",current_datetime)
+
+Output:-
+
+Current Date and Time: 2025-06-01 09:18:49.383822
+--------------------------------------------------
+import math
+number = 25
+sqrt = math.sqrt(number)
+print("square Root:",sqrt)
+
+Output:-
+
+square Root: 5.0
+--------------------------------------------------
+import math
+factorial = math.factorial(5)
+print("Factorial:",factorial)
+
+Output:-
+
+Factorial: 120
+---------------------------------------------------
+file_path = "example.txt"
+with open(file_path, "w") as file:
+    file.write("Hello, world!")
+with open(file_path, "r") as file:
+    content = file.read()
+    print("File Content:", content)
+
+Output:-
+
+  File Content: Hello, world!
+---------------------------------------------------------
+import string
+text = "hello,world!"
+uppercase_text = text.upper()
+print("uppercase Text:",uppercase_text)
+
+Output:-
+
+uppercase Text: HELLO,WORLD!
+------------------------------------------------------------
+import secrets
+random_number = secrets.randbelow(10)+1
+print("Cryptographically secure Random Number:",random_number)
+
+Output:-
+Cryptographically secure Random Number: 3
+--------------------------------------------------------------
+import platform
+system_name = platform.system()
+node_name = platform.node()
+processor_name = platform.processor()
+print("System Name:", system_name)
+print("Node Name:", node_name)
+print("Processor Name:", processor_name)
+
+ output:-
+
+System Name: Windows
+Node Name: AITS
+Processor Name: Intel64 Family 6 Model 151 Stepping 5, GenuineIntel
+
+
+
+
